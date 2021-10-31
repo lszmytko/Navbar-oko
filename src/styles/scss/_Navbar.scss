@@ -1,0 +1,55 @@
+@import "./variables";
+
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  background: white;
+  box-shadow: 0 4px 2px -2px lighten(gray, 20%);
+  img {
+    width: 40px;
+    height: 40px;
+  }
+
+  &_left,
+  &_right {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+  }
+
+  span {
+    text-transform: capitalize;
+    font-weight: 600;
+    color: black;
+    line-height: 1;
+  }
+
+  .icon {
+    font-size: 1.5rem;
+    color: black;
+  }
+
+  &_right_children{
+      display: flex;
+      column-gap: 2rem;
+  }
+
+  .btn_login{
+      color: white;
+      background: lighten(#911F27, 5%);
+      text-transform: none;
+      border-radius: 2rem;
+      padding: .7rem 1.5rem;
+      font-weight: 500;
+      transition: $transition;
+      letter-spacing: $spacing;
+      font-size: 0.875rem;
+
+      &:hover{
+          background: #911F27;
+      }
+  }
+
+
+}
